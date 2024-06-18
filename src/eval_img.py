@@ -6,13 +6,13 @@ from torchvision import transforms
 
 
 class FlagPredictionBuilder:
-    def __init__(self, device="cuda" if torch.cuda.is_available() else "cpu", image_size=None, model_path=os.path.join("models", "V3.pth")):
+    def __init__(self, device="cpu", image_size=None, model_path=os.path.join("models", "V3.pth")):
         if image_size is None:
             image_size = [224, 224]
         self.device = device
         self.image_size = image_size
-        self.model = torch.load(model_path).to(device)
-        self.classnames_file_location = r'C:\Users\ktown\PycharmProjects\FlagDetectionAPI\res\class_names.txt'
+        self.model = torch.load(model_path, map_location=torch.device('cpu'))
+        self.classnames_file_location = os.path.join("res", "class_names.txt")
         self.classnames = self.read_classnames()
         self.image_transform = self.set_image_transform()
 
@@ -65,6 +65,7 @@ class FlagPredictionBuilder:
 
         target_image_pred_probs = torch.softmax(img_pred, dim=1)
         target_image_pred_label = torch.argmax(target_image_pred_probs, dim=1)
+        print(target_image_pred_label)
 
         label_in_words = self.classnames[target_image_pred_label]
 
