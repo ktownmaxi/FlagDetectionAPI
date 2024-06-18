@@ -1,9 +1,9 @@
+import base64
 import os.path
 
 from flask import Flask, request
-from flask_restful import Api, Resource, reqparse, fields, marshal_with, abort
-from flask_sqlalchemy import SQLAlchemy
-import base64
+from flask_restful import Api
+
 import eval_img
 
 app = Flask(__name__)
@@ -36,4 +36,4 @@ def process_image():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0")
