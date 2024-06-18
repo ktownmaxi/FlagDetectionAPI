@@ -35,5 +35,4 @@ torchvision==0.17.1
 tornado==6.4
 urllib3_secure_extra==0.1.0
 watchdog==4.0.1
-xmlrpclib==1.0.1
 numpy==1.26.4
