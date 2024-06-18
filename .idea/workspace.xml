@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e19ca3eb-3d16-42f4-b7b7-1f89e9468144" name="Changes" comment="- Moved requirements.txt" />
+    <list default="true" id="e19ca3eb-3d16-42f4-b7b7-1f89e9468144" name="Changes" comment="- Changed requirements.txt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +125,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718716823355</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Changed requirements.txt">
+      <option name="closed" value="true" />
+      <created>1718717054686</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718717054686</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- Changed requirements.txt">
+      <option name="closed" value="true" />
+      <created>1718717134090</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718717134090</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +160,7 @@
     <MESSAGE value="- Added reqs and made api public" />
     <MESSAGE value="- Bug fixes&#10;- More improvments" />
     <MESSAGE value="- Moved requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Moved requirements.txt" />
+    <MESSAGE value="- Changed requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Changed requirements.txt" />
   </component>
 </project>
